@@ -6,6 +6,7 @@ public class MathUtils {
         return a + b;
     }
 
+
     public Boolean bigger(int a, int b) {
         if (a > b) {
             return true;
@@ -13,4 +14,20 @@ public class MathUtils {
             return false;
         }
     }
+
+
+    // homework 7
+
+    public float divide(float a, float b) {
+        return a / b;
+    }
+
+    public float multiply(float a, float b) {
+        return a * b;
+    }
+
+    public int square(int a) {
+        return a * a;
+    }
 }
+
