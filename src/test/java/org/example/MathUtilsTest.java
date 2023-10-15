@@ -84,7 +84,7 @@ public class MathUtilsTest {
     }
 
 
-    @ValueSource(ints = {2})
+    @ValueSource(ints = {2, -2})
     @ParameterizedTest
     void testSquare(int num) {
         int result = mathUtils.square(num);
@@ -103,7 +103,7 @@ public class MathUtilsTest {
     @CsvFileSource(resources = "/testdata.csv")
     @ParameterizedTest
     void testMultiplyTwoFloats(float a, float b, float expected) {
-        float result =  mathUtils.multiply(a, b);
+        float result = mathUtils.multiply(a, b);
         Assertions.assertEquals(expected, result);
     }
 

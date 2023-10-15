@@ -35,7 +35,7 @@ public class SolverTest {
 
     @ParameterizedTest
     @CsvSource({"1 ,1 ,3 ,0 ", "1, 4, 4, 1", "1, 20, 3, 2"})
-    void testRootsNumbers(int a, int b, int c, int expected) {
+    void expectedNumberOfRoots(int a, int b, int c, int expected) {
         int result = solver.solve(a, b, c);
         Assertions.assertEquals(expected, result);
     }
