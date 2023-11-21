@@ -21,3 +21,25 @@
 | 1  | when the quadratic equations result is less than (0) it should return (0) root  | pass   |
 | 2  | when the quadratic equations result is equal (0) it should return (1) root      | pass   |
 | 3  | when the quadratic equations result is more than (0) it should return (2) roots | pass   |
+
+------------------------------------------------------------------------------------------------------
+
+| No | the check name (GET/test-orders/{id})    (homework 10)                                                                                                                      | Status |
+|----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| 1  | GET method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller/getById using test data ID "1" EXPECT success result, STATUS response code "200"  | pass   |
+| 2  | GET method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller/getById using test data ID "5" EXPECT success result, STATUS response code "200"  | pass   |
+| 3  | GET method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller/getById using test data ID "10" EXPECT success result, STATUS response code "200" | pass   |
+| 4  | GET method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller/getById using test data ID "12" EXPECT bad request, STATUS response code "400"    | pass   |
+| 5  | GET method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller/getById using test data ID "0" EXPECT bad request, STATUS response code "400"     | pass   |
+
+------------------------------------------------------------------------------------------------------
+
+| No | the check name (POST/test-orders)    (homework 10)                                                                                                                                                                                   | Status |
+|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| 1  | post method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller using valid test data ("customerName","customerPhone") EXPECT success result, STATUS response code "200"                                  | pass   |
+| 2  | post method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller using invalid test data ("customerName","customerPhone") EXPECT bad request, STATUS response code "400"                                   | pass   |
+| 3  | post method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller  using  missing required data EXPECT bad request, STATUS response code "400"                                                              | pass   |
+| 4  | post method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller  using valid data (customerName,customerPhone) without Double quotation, EXPECT Incorrect query, STATUS response code "400"               | pass   |
+| 5  | post method for URL: http://51.250.6.164:8080/swagger-ui/index.html#/test-order-controller  using valid data (customerName,customerPhone) and (courierId) more than 15 characters, EXPECT Incorrect query, STATUS response code "400"| pass   |
+ 
+                              
