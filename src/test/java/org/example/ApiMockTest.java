@@ -32,8 +32,8 @@ public class ApiMockTest {
         //serialization
         String orderDtoTestAsJson = new Gson().toJson(orderDtoTest);
 
-        given().
-                header(" Content-Type:", "application/json")
+        given()
+                .header("Content-Type", "application/json")
                 .body(orderDtoTest)
                 .log()
                 .all()
@@ -41,7 +41,7 @@ public class ApiMockTest {
                 .then()
                 .log()
                 .all()
-                .statusCode(HttpStatus.SC_BAD_REQUEST);
+                .statusCode(HttpStatus.SC_OK);
 
     }
 
