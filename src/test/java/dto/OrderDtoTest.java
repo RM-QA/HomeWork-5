@@ -8,7 +8,8 @@ public class OrderDtoTest {
 
     private String customerPhone;
     private String comment;
-    private int id;
+    private long id;
+
 
     public OrderDtoTest(String customerName, String customerPhone, String comment) {
         this.status = "OPEN";
@@ -35,5 +36,29 @@ public class OrderDtoTest {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public int getCourierId() {
+        return courierId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getCustomerPhone() {
+        return customerPhone;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public long getId() {
+        return id;
     }
 }
